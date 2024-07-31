@@ -13,7 +13,8 @@
 inherit swupdate-common
 inherit image-artifact-names
 
-S = "${WORKDIR}/${PN}"
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
 
 SRC_URI += "file://sw-description"
 SWUPDATE_IMAGES += "${IMAGE_LINK_NAME}"
